@@ -19,6 +19,8 @@ spec:
       containers:
         - name: libretranslate
           image: busybox
+          command:
+            - libretranslate
           livenessProbe:
             httpGet:
               path: /
