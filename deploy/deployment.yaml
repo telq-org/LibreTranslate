@@ -35,11 +35,11 @@ spec:
               protocol: TCP
           resources:
             requests:
-              cpu: 450m
-              memory: 450Mi
+              cpu: 500m
+              memory: 500Mi
             limits:
-              cpu: "2"
-              memory: 1Gi
+              cpu: "3"
+              memory: 3Gi
           env:
             - name: LT_HOST
               value: 0.0.0.0
