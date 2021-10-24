@@ -22,13 +22,11 @@ spec:
           command:
             - libretranslate
           livenessProbe:
-            httpGet:
-              path: /
-              port: 80
+            tcpSocket:
+              port: 8080
           readinessProbe:
-            httpGet:
-              path: /
-              port: 80
+            tcpSocket:
+              port: 8080
           ports:
             - containerPort: 80
               name: http
